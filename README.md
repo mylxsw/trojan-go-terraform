@@ -67,3 +67,27 @@ terraform apply -var digitalocean_token=$DIGITALOCEAN_ACCESS_TOKEN \
     -var password=fre4-0edv-7cQ \
     -var region=sfo3
 ```
+
+> 注意：一定要修改 domain 和 password！
+
+客户端配置示例
+
+Surge：
+
+```
+DigitalOcean = trojan, hello-us.example.com, 443, password=fre4-0edv-7cQ, skip-cert-verify=true, sni=hello-us.example.com
+```
+
+Clash：
+
+```json
+{
+    "name": "DigitalOcean",
+    "password": "fre4-0edv-7cQ",
+    "port": 443,
+    "server": "hello-us.example.com",
+    "skip-cert-verify": true,
+    "sni": "hello-us.example.com",
+    "type": "trojan"
+}
+```
