@@ -29,8 +29,8 @@
 ### Region
 
 - `sgp1` Singapore
-- `sfo1/2/3 San Francisco
-- `nyc1/2/3 New York
+- `sfo1/2/3` San Francisco
+- `nyc1/2/3` New York
 - `ams2/3` Amsterdam
 - `lon1` London
 - `fra1` Frankfurt
