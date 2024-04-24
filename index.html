@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gulu Artificial Intelligence</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        @keyframes gradientBG {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .animated-gradient {
+            background: linear-gradient(270deg, #007cf0, #00dfd8, #ff0080);
+            background-size: 600% 600%;
+            animation: gradientBG 10s ease infinite;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body class="animated-gradient flex justify-center items-center h-screen overflow-hidden">
+    <h1 class="text-white text-6xl font-bold animate__animated animate__fadeIn">Hello, World</h1>
+</body>
+</html>
