@@ -4,3 +4,4 @@
 *.backup
 *.tfstate
 *.tar.gz
+.deploy.sh
